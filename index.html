@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dijital Pusula — İçerik & Dijital Pazarlama</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; color: #1a1a1a; }
+  
+  nav {
+    background: white;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .logo { font-size: 22px; font-weight: bold; color: #1a1a1a; }
+  .logo span { color: #e60023; }
+  nav a { text-decoration: none; color: #555; margin-left: 30px; font-size: 14px; }
+  nav a:hover { color: #e60023; }
+
+  .hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    padding: 100px 60px;
+    text-align: center;
+  }
+  .hero h1 { font-size: 48px; margin-bottom: 20px; line-height: 1.2; }
+  .hero h1 span { color: #e60023; }
+  .hero p { font-size: 18px; color: #aaa; max-width: 600px; margin: 0 auto 40px; line-height: 1.8; }
+  .btn { background: #e60023; color: white; padding: 14px 36px; border-radius: 4px; text-decoration: none; font-size: 15px; }
+  .btn:hover { background: #cc001f; }
+
+  .services {
+    padding: 80px 60px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  .services h2 { font-size: 32px; margin-bottom: 12px; }
+  .services p { color: #666; margin-bottom: 50px; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1000px; margin: 0 auto; }
+  .card {
+    background: white;
+    border-radius: 8px;
+    padding: 36px 24px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    text-align: left;
+  }
+  .card .icon { font-size: 36px; margin-bottom: 16px; }
+  .card h3 { font-size: 18px; margin-bottom: 10px; }
+  .card p { font-size: 14px; color: #666; line-height: 1.7; }
+
+  .about {
+    padding: 80px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .about h2 { font-size: 32px; margin-bottom: 20px; }
+  .about p { color: #555; line-height: 1.9; margin-bottom: 16px; font-size: 15px; }
+  .about-img {
+    background: linear-gradient(135deg, #e60023, #ff6b6b);
+    border-radius: 12px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+  }
+
+  .contact {
+    background: #1a1a2e;
+    color: white;
+    padding: 80px 60px;
+    text-align: center;
+  }
+  .contact h2 { font-size: 32px; margin-bottom: 16px; }
+  .contact p { color: #aaa; margin-bottom: 30px; font-size: 16px; }
+  .contact a { color: #e60023; text-decoration: none; font-size: 18px; }
+
+  .privacy {
+    padding: 60px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .privacy h1 { font-size: 28px; margin-bottom: 24px; }
+  .privacy h2 { font-size: 18px; margin: 24px 0 10px; }
+  .privacy p { color: #555; line-height: 1.8; margin-bottom: 12px; font-size: 15px; }
+
+  footer {
+    background: #111;
+    color: #666;
+    text-align: center;
+    padding: 24px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Dijital<span>Pusula</span></div>
+  <div>
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#iletisim">İletişim</a>
+    <a href="gizlilik.html">Gizlilik Politikası</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Dijital Dünyada<br><span>Doğru Yönü</span> Bulun</h1>
+  <p>Sosyal medya içerik yönetimi, dijital pazarlama ve marka stratejisi konularında profesyonel çözümler sunuyoruz.</p>
+  <a href="#iletisim" class="btn">Bizimle Çalışın</a>
+</section>
+
+<section class="services" id="hizmetler">
+  <h2>Hizmetlerimiz</h2>
+  <p>İşletmenizi dijital dünyada öne çıkarıyoruz</p>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>Sosyal Medya Yönetimi</h3>
+      <p>Pinterest, Instagram ve diğer platformlarda içerik stratejisi oluşturma ve yönetim hizmetleri.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎨</div>
+      <h3>İçerik Üretimi</h3>
+      <p>Hedef kitlenizle buluşacak özgün görseller, videolar ve yazılı içerikler üretiyoruz.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Dijital Pazarlama</h3>
+      <p>Marka bilinirliğini artırmak ve satışları yükseltmek için veri odaklı pazarlama stratejileri.</p>
+    </div>
+  </div>
+</section>
+
+<section id="hakkimizda">
+  <div class="about">
+    <div>
+      <h2>Biz Kimiz?</h2>
+      <p>Dijital Pusula, küçük ve orta ölçekli işletmelere dijital dünyada yön gösteren bir içerik yönetimi ajansıdır.</p>
+      <p>Pinterest başta olmak üzere tüm sosyal medya platformlarında içerik üretimi, zamanlama ve performans analizi konularında uzmanlaşmış ekibimizle yanınızdayız.</p>
+      <p>Hedefimiz; müşterilerimizin dijital varlığını güçlendirmek ve organik büyümelerini desteklemektir.</p>
+    </div>
+    <div class="about-img">🧭</div>
+  </div>
+</section>
+
+<section class="contact" id="iletisim">
+  <h2>İletişime Geçin</h2>
+  <p>Projeniz hakkında konuşmak için bize ulaşın</p>
+  <a href="mailto:dijitalpusula@gmail.com">dijitalpusula@gmail.com</a>
+</section>
+
+<footer>
+  © 2026 Dijital Pusula. Tüm hakları saklıdır. |
+  <a href="gizlilik.html" style="color:#e60023; text-decoration:none;">Gizlilik Politikası</a>
+</footer>
+
+</body>
+</html>
